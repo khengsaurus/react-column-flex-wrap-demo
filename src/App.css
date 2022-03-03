@@ -1,38 +1,87 @@
 .App {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.column {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* ------------------------- Column Sample ------------------------- */
+
+.sample {
+  max-height: 80vh;
+}
+
+.box {
+  margin: 4px;
+  width: 40px;
+  height: 40px;
+}
+
+.border-white {
+  border: 2px solid white;
+}
+
+.border-blue {
+  border: 2px solid blue;
+}
+
+.grey {
+  background-color: grey;
+}
+
+.purple {
+  background-color: purple;
+}
+
+/* ------------------------- Legend ------------------------- */
+
+.legend {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 750px;
+  width: 160px;
+  background-color: black;
+  border: 2px solid orange;
+  z-index: 1000;
+  overflow-y: scroll;
+}
+
+.legend-contents {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+p {
+  color: white;
+  font-size: 16px;
+  margin: 3px;
+}
+
+button {
+  height: 36px;
+  width: 73px;
+  margin: 3px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.big-button {
+  width: 152px;
+  margin: 3px;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

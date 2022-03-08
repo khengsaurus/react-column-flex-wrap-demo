@@ -51,19 +51,19 @@
 
 .legend {
   position: fixed;
-  bottom: 0;
   right: 0;
-  height: 750px;
-  width: 160px;
+  height: calc(100vh - 4px);
+  width: 240px;
   background-color: black;
-  border: 2px solid orange;
+  border: 2px solid grey;
   z-index: 1000;
   overflow-y: scroll;
+  justify-content: space-between;
 }
 
-.legend-contents {
+.content {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
 }
 
 p {
@@ -73,15 +73,14 @@ p {
 }
 
 button {
-  height: 36px;
-  width: 73px;
+  height: 30px;
+  width: 113px;
   margin: 3px;
   text-align: center;
 }
 
 .big-button {
-  width: 152px;
+  width: 232px;
   margin: 3px;
   text-align: center;
 }
-
